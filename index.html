@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A&P Study Hub</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#151d33;
+      --card2:#10172b;
+      --text:#eef2ff;
+      --muted:#aab6d3;
+      --line:#2c395f;
+      --accent:#8ab4ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:linear-gradient(180deg,#0b1020,#10162a);
+      color:var(--text);
+      font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+    .wrap{max-width:980px;margin:auto;padding:42px 18px 70px}
+    header{text-align:center;margin-bottom:34px}
+    h1{font-size:clamp(2rem,5vw,3.2rem);margin:0 0 8px}
+    .sub{color:var(--muted);font-size:1.05rem}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:18px;
+    }
+    .chapter{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:22px;
+      box-shadow:0 12px 35px rgba(0,0,0,.18);
+    }
+    .num{
+      color:var(--accent);
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-size:.82rem;
+    }
+    h2{margin:7px 0 8px;font-size:1.45rem}
+    .desc{color:var(--muted);min-height:48px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    a{
+      display:inline-block;
+      text-decoration:none;
+      color:var(--text);
+      background:#263454;
+      border:1px solid #3a4c77;
+      border-radius:12px;
+      padding:11px 14px;
+      font-weight:750;
+    }
+    a:hover{border-color:var(--accent)}
+    footer{
+      margin-top:34px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Anatomy &amp; Physiology</h1>
+      <div class="sub">Study Hub</div>
+    </header>
+
+    <section class="grid">
+      <article class="chapter">
+        <div class="num">Chapter 1</div>
+        <h2>An Introduction to the Human Body</h2>
+        <div class="desc">Review the major Chapter 1 terms and concepts with the interactive flashcard set.</div>
+        <div class="actions">
+          <a href="chapter1flashcards.html">Open Flashcards</a>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="num">Chapter 2</div>
+        <h2>The Chemical Level of Organization</h2>
+        <div class="desc">Review the major Chapter 2 terms and concepts with the interactive flashcard set.</div>
+        <div class="actions">
+          <a href="chapter2flashcards.html">Open Flashcards</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      More chapters and practice tests can be added here as the course continues.
+    </footer>
+  </main>
+</body>
+</html>
